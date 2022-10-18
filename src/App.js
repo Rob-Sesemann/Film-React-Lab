@@ -5,6 +5,7 @@ import FilmDetails from './FilmDetails';
 import TMDB from './TMDB';
 
 const films = TMDB.films
+console.log(films)
 
 export default class App extends Component {
 
@@ -17,7 +18,16 @@ export default class App extends Component {
       faves: [],
       current: {}
     }
+    this.handleFaveToggle = this.handleFaveToggle.bind(this)
   }
+
+  handleFaveToggle = (films) => {
+    
+    const faves = faves.slice()
+    console.log(faves, "This is faves on line 25")
+    const filmIndex = faves.indexOf()
+  }
+
   render() {
     
     return (
